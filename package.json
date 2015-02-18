@@ -1,15 +1,56 @@
 {
-  "name": "web-boilerplate",
+  "name": "browserifyBoilerplate",
   "version": "0.0.1",
+  "config": {
+    "dirs": {
+      "sass": "./assets/css/scss",
+      "icons": "./assets/icons",
+      "imgSrc": "./assets/img",
+      "css": "./assets/css",
+      "img": "./assets/img",
+      "fonts": "./assets/fonts",
+      "js": "./assets/js"
+    },
+    "cleanFiles": [
+      "node_modules",
+      ".sass-cache",
+      "bower_components"
+    ],
+    "copyFiles": {
+      "./bower_components/components-font-awesome/fonts/*": "./assets/fonts/",
+      "./node_modules/modernizr/dist/modernizr-build.min.js": "./assets/js/libs/vendor/",
+      "./bower_components/respond/dest/respond.min.js": "./assets/js/libs/vendor/"
+    }
+  },
   "devDependencies": {
+    "browserify": "^8.1.3",
+    "browserify-shim": "^3.8.2",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.1",
     "grunt-available-tasks": "^0.5.0",
-    "grunt-browser-sync": "^0.9.1",
+    "grunt-browserify": "^3.3.0",
     "grunt-contrib-clean": "^0.5.0",
     "grunt-contrib-compass": "^0.8.0",
-    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-uglify": "^0.7.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-shell": "^1.1.1"
+  },
+  "browser": {
+    
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.2",
+    "fastclick": "^1.0.6",
+    "jquery": "^2.1.3",
+    "modernizr": "^3.0.0-alpha",
+    "throbber": "^1.0.1"
   }
 }
