@@ -1,5 +1,5 @@
 {
-  "name": "webBoilerplate",
+  "name": "browserifyBoilerplate",
   "version": "0.0.0",
   "dependencies": {
     "respond": "~1.4.2",
