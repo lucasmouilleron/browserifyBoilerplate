@@ -36,7 +36,7 @@
     "grunt-shell": "^1.1.1"
   },
   "browser": {
-    
+    "moment": "./bower_components/moment/min/moment.min.js"
   },
   "browserify": {
     "transform": [
@@ -44,7 +44,7 @@
     ]
   },
   "browserify-shim": {
-    
+    "moment": "moment"
   },
   "dependencies": {
     "bootstrap": "^3.3.2",

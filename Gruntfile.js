@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   /////////////////////////////////////////////////////////////////////////
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
+    cfg: grunt.file.readJSON("package.local.json"),
     availabletasks: {
       tasks: {
         options: {
@@ -53,11 +54,11 @@ module.exports = function(grunt) {
     compass: {
       compile: {
         options: {
+          httpPath: "<%=cfg.baseURL%>",
           sassDir: "<%=pkg.config.dirs.sass%>",
           cssDir: "<%=pkg.config.dirs.css%>",
           imagesDir: "<%=pkg.config.dirs.img%>",
           fontsDir: "<%=pkg.config.dirs.fonts%>",
-          httpStylesheetsPath:"<%=pkg.config.dirs.css%>",
           cacheDir: ".sass-cache",
           outputStyle:"compressed",
           relativeAssets:true,
