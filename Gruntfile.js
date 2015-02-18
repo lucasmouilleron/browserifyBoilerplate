@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     browserify: {
       watch: {
         files: {
-          "<%=pkg.config.dirs.js%>/scripts.min.js": ["<%=pkg.config.dirs.js%>/main.js"],
+          "<%=pkg.config.dirs.js%>/_build.js": ["<%=pkg.config.dirs.js%>/main.js"],
         },
         options: {
           watch: true
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
       },
       compile: {
         files: {
-          "<%=pkg.config.dirs.js%>/scripts.min.js": ["<%=pkg.config.dirs.js%>/main.js"],
+          "<%=pkg.config.dirs.js%>/_build.js": ["<%=pkg.config.dirs.js%>/main.js"],
         }
       }
     },
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          "<%=pkg.config.dirs.js%>/scripts.min.js": ["<%=pkg.config.dirs.js%>/scripts.min.js"]
+          "<%=pkg.config.dirs.js%>/_build.js": ["<%=pkg.config.dirs.js%>/_build.js"]
         }
       }
     },
