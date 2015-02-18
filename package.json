@@ -7,13 +7,13 @@
   },
   "config": {
     "dirs": {
-      "sass": "./assets/css/scss",
-      "icons": "./assets/icons",
-      "imgSrc": "./assets/img",
-      "css": "./assets/css",
-      "img": "./assets/img",
-      "fonts": "./assets/fonts",
-      "js": "./assets/js"
+      "sass": "./web/assets/css/scss",
+      "icons": "./web/assets/icons",
+      "imgSrc": "./web/assets/img",
+      "css": "./web/assets/css",
+      "img": "./web/assets/img",
+      "fonts": "./web/assets/fonts",
+      "js": "./web/assets/js"
     },
     "cleanFiles": [
       "node_modules",
@@ -21,9 +21,9 @@
       "bower_components"
     ],
     "copyFiles": {
-      "./bower_components/components-font-awesome/fonts/*": "./assets/fonts/",
-      "./node_modules/modernizr/dist/modernizr-build.min.js": "./assets/js/libs/vendor/",
-      "./bower_components/respond/dest/respond.min.js": "./assets/js/libs/vendor/"
+      "./bower_components/components-font-awesome/fonts/*": "./web/assets/fonts/",
+      "./node_modules/modernizr/dist/modernizr-build.min.js": "./web/assets/js/libs/vendor/",
+      "./bower_components/respond/dest/respond.min.js": "./web/assets/js/libs/vendor/"
     }
   },
   "devDependencies": {
