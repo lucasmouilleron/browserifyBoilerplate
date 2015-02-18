@@ -1,5 +1,5 @@
-Our web boilerplate.
+Our browserify boilerplate.
 
-- Based on http://html5boilerplate.com
-- Stack : scss, requirejs, bootstrap
-- Build : grunt, bower, build, watch, sync
+- A nice frontend browserify boilerplate
+- Stack : browserify, compass, bootstrap, fontawesome
+- Build : install, build, watch, grunt, npm, bower

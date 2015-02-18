@@ -3,9 +3,9 @@ browserifyBoilerplate
 
 Features
 --------
-- A nice frontend web boiler plate
-- Stack : scss, requirejs, bootstrap, fontawesome
-- Build : install, build, watch, grunt, bower
+- A nice frontend browserify boilerplate
+- Stack : browserify, compass, bootstrap, fontawesome
+- Build : install, build, watch, grunt, npm, bower
 
 Install requirements
 --------------------
