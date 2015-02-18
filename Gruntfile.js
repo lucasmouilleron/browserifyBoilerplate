@@ -21,7 +21,7 @@ module.exports = function(grunt) {
       },
       install: {
         command: function() {
-          return "bower cache clean && bower install";
+          return "npm install";
         }
       },
     },

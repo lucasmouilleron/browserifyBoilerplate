@@ -1,6 +1,10 @@
 {
   "name": "browserifyBoilerplate",
   "version": "0.0.1",
+  "scripts" :
+  { 
+    "postinstall" : "bower cache clean && bower install"
+  },
   "config": {
     "dirs": {
       "sass": "./assets/css/scss",
