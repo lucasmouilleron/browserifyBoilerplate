@@ -1,6 +1,8 @@
 browserifyBoilerplate
 =====================
 
+Simple browserify boilerplate.
+
 Features
 --------
 - A nice frontend browserify boilerplate
